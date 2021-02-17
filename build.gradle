@@ -30,8 +30,8 @@ dependencies {
     implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.h2database:h2")
-    compileOnly("org.projectlombok:lombok")
-    runtimeOnly("ch.qos.logback:logback-classic")
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 

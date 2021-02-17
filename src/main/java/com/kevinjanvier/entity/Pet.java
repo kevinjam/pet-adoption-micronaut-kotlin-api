@@ -1,20 +1,19 @@
 package com.kevinjanvier.entity;
 
+import io.micronaut.core.annotation.Introspected;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "pets")
 public class Pet {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String species;

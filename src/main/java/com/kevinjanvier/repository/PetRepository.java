@@ -4,7 +4,9 @@ import com.kevinjanvier.entity.Pet;
 import io.micronaut.data.annotation.Repository;
 import io.micronaut.data.jpa.repository.JpaRepository;
 
-import javax.inject.Singleton;
+import java.util.List;
 
-
-public interface PetRepository extends JpaRepository<Pet, Long>{}
+@Repository
+public interface PetRepository extends JpaRepository<Pet, Long> {
+//    @Override List<Pet>findAll();
+}
