@@ -30,7 +30,7 @@ public class PetController {
         return petService.updatePet(pet);
     }
 
-    @Delete("/delete-pet")
+    @Delete("/delete-pet/{id}")
     public void deletePet(@PathVariable("id")Long id){
         petService.deletePet(id);
     }

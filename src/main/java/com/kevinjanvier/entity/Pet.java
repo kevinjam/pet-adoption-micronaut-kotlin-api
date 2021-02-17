@@ -18,8 +18,11 @@ public class Pet {
     private String name;
     private String species;
     private String breed;
-    private String gender;
+    private Integer gender;
     private String birth;
-    private String love;
+    private Boolean love;
     private String picture;
+    private String value;
+    private String massage;
+
 }
