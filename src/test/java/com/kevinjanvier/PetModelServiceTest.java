@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Assertions;
 import javax.inject.Inject;
 
 @MicronautTest
-class PetServiceTest {
+class PetModelServiceTest {
 
     @Inject
     EmbeddedApplication<?> application;
