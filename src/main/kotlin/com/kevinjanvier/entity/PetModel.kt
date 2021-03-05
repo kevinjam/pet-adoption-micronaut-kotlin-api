@@ -21,5 +21,5 @@ data class PetModel (
     var reference_image_id: String? = null,
     var image: ImageModel? = null,
     var weight: WeightModel? = null,
-    var height: HeightModel
+    var height: HeightModel? = null
 )

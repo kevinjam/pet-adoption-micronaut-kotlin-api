@@ -1,6 +1,6 @@
 applicationType: default
-defaultPackage: com.example
+defaultPackage: com.kevinjanvier
 testFramework: junit
 sourceLanguage: kotlin
 buildTool: gradle
-features: [annotation-api, app-name, gradle, http-client, junit, kotlin, kotlin-application, logback, mongo-reactive, netty-server, readme, shade, testcontainers, yaml]
+features: [ annotation-api, app-name, gradle, http-client, junit, kotlin, kotlin-application, kotlin-extension-functions, logback, mongo-sync, netty-server, readme, shade, testcontainers, yaml ]
