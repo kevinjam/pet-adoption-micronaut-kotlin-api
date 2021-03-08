@@ -39,6 +39,23 @@ dependencies {
     testImplementation("org.testcontainers:mongodb")
 }
 
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
+task copyToLib(type: Copy) {
+    into "$buildDir/libs"
+    from(configurations.compile)
+}
+
+gradle.taskGraph.whenReady {
+    taskGraph ->
+        if (taskGraph.hasTask(stage)) {
+            test.enabled = false
+        }
+}
+
+stage.dependsOn(copyToLib)
+
 //noArg {
 //    annotation("com.kevinjanvier.annotation.NoArg")
 //}
