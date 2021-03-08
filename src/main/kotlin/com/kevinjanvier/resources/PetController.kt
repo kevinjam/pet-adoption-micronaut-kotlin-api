@@ -11,7 +11,7 @@ import java.net.URI
 class PetController(private val petService: PetService) {
 
 
-    @Post
+    @Post("/create")
     fun create(@Body request: PetModel): HttpResponse<Void> {
         val createdId = petService.createPet(request)
 
